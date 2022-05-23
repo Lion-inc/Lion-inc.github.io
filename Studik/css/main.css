@@ -5,6 +5,32 @@
   font-weight: normal;
 }
 
+@font-face {
+  font-family: 'Material Symbols Outlined';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialsymbolsoutlined/v7/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1n-q_4MrImHCIJIZrDCvHOej.woff2) format("woff2");
+}
+
+a {
+  color: black;
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
 * {
   user-select: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -206,16 +232,41 @@ header {
 
 .major-block_second-cont_tech-stack {
   width: 60vw;
-  flex-direction: column;
-}
-
-.major-block_second-cont_tech-stack div {
-  width: 80%;
-  padding-left: 15vw;
 }
 
 .major-block_second-cont_arch-stack {
   padding-top: 5%;
+}
+
+.tech-stack_container {
+  display: flex;
+}
+
+.stack-element {
+  color: #000;
+  background-color: #8FC8EB;
+  margin: 0.6vw;
+  border-radius: 2vw;
+  padding: 0 36px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.stack-element h3 {
+  font-size: 36px;
+  font-weight: bold;
+  margin: auto;
+}
+
+.big_stack-elements:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.big_stack-elements:nth-child(1) div {
+  height: 50%;
 }
 
 .about-us-section_cube {
@@ -320,6 +371,31 @@ header {
   border-radius: 15px;
 }
 
+footer {
+  min-height: 20vh;
+  background-color: #93C8E9;
+  color: black;
+  font-family: "Maven Pro", serif;
+}
+
+footer .app-name {
+  height: auto;
+}
+
+footer .major_cont {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .main-part {
+  width: 40%;
+  margin-right: 10vw;
+}
+
+.footer_part {
+  width: 27.5%;
+}
+
 @media screen and (min-width: 900px) {
   .home-section_text p:hover {
     box-shadow: 0px 7px 9px 0px rgba(26, 230, 218, 0.15), 0px 13px 21px 0px rgba(26, 230, 218, 0.27), 0px 13px 21px 0px rgba(0, 0, 0, 0.15), 0px 4px 16px 0px rgba(26, 230, 218, 0.33), 0px 4px 16px 0px rgba(0, 0, 0, 0.09), 0px 3px 9px 0px rgba(26, 230, 218, 0.09), 0px 3px 9px 0px rgba(0, 0, 0, 0.09), 0px 3px 3px 0px rgba(26, 230, 218, 0.09), 0px 3px 3px 0px rgba(0, 0, 0, 0.17);
@@ -389,6 +465,27 @@ header {
   }
   .section-download img {
     width: 90%;
+  }
+  .stack-element h3 {
+    font-size: 26px;
+  }
+  .options span {
+    font-size: 11px;
+  }
+  .app-name {
+    font-size: 15px;
+  }
+  footer {
+    padding-bottom: 4vh;
+  }
+  footer .major_cont {
+    flex-direction: column;
+  }
+  footer .main-part {
+    width: auto;
+  }
+  .footer_part {
+    width: auto;
   }
 }
 /*# sourceMappingURL=main.css.map */
