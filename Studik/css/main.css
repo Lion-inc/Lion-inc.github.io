@@ -221,7 +221,7 @@ header a {
 
 .home-section_phone div {
   width: auto;
-  height: 90%;
+  height: 90vh;
 }
 
 .home-section_phone .phone {
@@ -498,10 +498,6 @@ footer .main-part {
   }
   .major-block_second-cont_tech-stack {
     width: 100%;
-  }
-  .home-section_phone .phone {
-    width: 80%;
-    height: auto;
   }
   .home-section_text h2 {
     margin-top: 0;
