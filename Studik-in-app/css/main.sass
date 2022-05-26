@@ -5,27 +5,6 @@
 	font-style: normal
 	font-weight: normal
 
-
-// @font-face 
-// 	font-family: 'Material Icons'
-// 	font-style: normal
-// 	font-weight: 400
-// 	src: url(https://fonts.gstatic.com/s/materialicons/v128/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2')
-
-
-// .material-icons 
-// 	font-family: 'Material Icons'
-// 	font-weight: normal
-// 	font-style: normal
-// 	letter-spacing: normal
-// 	text-transform: none
-// 	display: inline-block
-// 	white-space: nowrap
-// 	word-wrap: normal
-// 	direction: ltr
-// 	-webkit-font-feature-settings: 'liga'
-// 	-webkit-font-smoothing: antialiased
-
 @font-face
 	font-family: 'Material Symbols Outlined'
 	font-style: normal
@@ -49,12 +28,10 @@ html, body
 	display: inline-block
 	white-space: nowrap
 	word-wrap: normal
-	// direction: ltr
 	-webkit-font-feature-settings: 'liga'
 	-webkit-font-smoothing: antialiased
 
 *
-	// user-select: none
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 
 html::-webkit-scrollbar 
@@ -65,15 +42,6 @@ html::-webkit-scrollbar-thumb
 	border-radius: 1vw
 html::-webkit-scrollbar-thumb:hover 
 	background-color: #777
-
-
-// html::-webkit-scrollbar-track 
-// 	background-color: #5555
-// html::-webkit-scrollbar-track:hover 
-// 	background-color: #555
-	
-// .material-symbols-outlined 
-// 	font-variation-settings:'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48
 
 .material-icons  
 	font-family: 'Material Icons'
@@ -100,8 +68,6 @@ html::-webkit-scrollbar-thumb:hover
 body
 	margin: 0
 
-
-
 html 
 	background-color: #121212
 	color: #8FC8EB //0295db
@@ -111,7 +77,7 @@ html
 h2
 	font-size: 64px
 	font-weight: bold
-	font-family: "Titillium Web"
+	font-family: "Maven Pro", sans-serif
 
 
 h3
@@ -159,10 +125,11 @@ header
 	background-repeat: no-repeat
 	background-size: 0% 2px
 	transition: background-size .3s
+
 	span
 		font-size: 16px
-		font-family: "Titillium Web"
 		color: rgb(69, 69, 69)
+		font-family: "Maven Pro", sans-serif
 		cursor: pointer
 		text-decoration: none
 		background-image: linear-gradient(black, grey)
@@ -171,9 +138,6 @@ header
 		background-size: 0% 2px
 		transition: background-size .3s
 		padding: 8px 0
-
-
-
 
 .major-block
 	display: flex
@@ -193,12 +157,21 @@ header
 	font-family: "Maven Pro", serif
 	&_about-us
 		width: 40vw
+
 	&_tech-stack
 		width: 40vw
 		justify-content: flex-start
+		h2
+			font-family: "Roboto", serif
+		h4
+			font-weight: 400
+
+
 	&_arch-stack
 		padding-top: 2%
 		justify-content: flex-start
+		font-family: 'Roboto', sans-serif
+
 		img
 			width: 100%
 	
@@ -216,19 +189,24 @@ header
 		width: auto
 		height: 90%	
 		transition: opacity 0.5s ease-in-out
-
+.major-photo_container
+	height 50vh
 #major-photo-2
 	opacity: 0
 .home-section_text
 	h2
 		margin-top: -10%
+	h4
+		margin-top: -5%
+		font-weight: 400
 	a
+		text-decoration: none
 		user-select:none
 		width: max-content
 		display: block
 		padding: 0 10px 
 		font-size: 18px
-		font-family: "Titillium Web"
+		font-family: "Maven Pro", sans-serif
 		color: rgb(255, 255, 255)
 		font-weight: bold
 		line-height: 2.5
@@ -238,6 +216,7 @@ header
 		cursor: pointer
 		transition: box-shadow .4s ease-in-out
 		margin-bottom: 2.5vh
+		margin-top: 5vh
 			
 
 .major-block_second-cont
@@ -255,6 +234,7 @@ header
 
 	&_tech-stack
 		width: 60vw
+		height: 88%
 		div
 			// width: 80%
 			// padding-left: 15vw
@@ -308,6 +288,7 @@ header
 .team
 	display: grid
 	grid-template-columns: 50% 50%
+	font-family: "Maven Pro", sans-serif
 
 .section-team-description
 	margin-top: 3.5vw
@@ -321,7 +302,7 @@ header
 	height: 15vw
 	margin-top: 3.5vw
 	display: flex
-	font-family: 'Roboto', sans-serif
+	font-family: "Maven Pro", sans-serif
 	
 	div
 		margin-left: 1.5vw
@@ -334,6 +315,7 @@ header
 		margin-top: 1vw
 		font-size: 36px
 		font-weight: 600
+		font-family: "Roboto", sans-serif
 	&-role
 		font-size: 20px
 		font-family: "Maven Pro", serif
@@ -382,7 +364,7 @@ footer
 .major-block_tech-stack
 	height: 75vh
 @media screen  and (min-width: 900px) 
-	.home-section_text p:hover
+	.home-section_text a:hover
 		box-shadow: 0px 7px 9px 0px rgba(26, 230, 218, 0.15), 0px 13px 21px 0px rgba(26, 230, 218, 0.27), 0px 13px 21px 0px rgba(0, 0, 0, 0.15), 0px 4px 16px 0px rgba(26, 230, 218, 0.33), 0px 4px 16px 0px rgba(0, 0, 0, 0.09), 0px 3px 9px 0px rgba(26, 230, 218, 0.09), 0px 3px 9px 0px rgba(0, 0, 0, 0.09), 0px 3px 3px 0px rgba(26, 230, 218, 0.09), 0px 3px 3px 0px rgba(0, 0, 0, 0.17)
 	.section-download img:hover 
 		box-shadow: 0px 7px 9px 0px rgba(100, 115, 151, 0.15), 0px 13px 21px 0px black, 0px 13px 21px 0px rgba(0, 0, 0, 0.15), 0px 4px 16px 0px black, 0px 4px 16px 0px rgba(0, 0, 0, 0.09), 0px 3px 9px 0px rgba(53, 103, 205, 0.09), 0px 3px 9px 0px rgba(0, 0, 0, 0.09), 0px 3px 3px 0px rgba(102, 145, 233, 0.09), 0px 3px 3px 0px rgba(0, 0, 0, 0.17)
@@ -417,6 +399,7 @@ footer
 					width: 100%
 			&_tech-stack
 				width: 100%
+	
 	.home-section_text
 		h2
 			margin-top: 0
