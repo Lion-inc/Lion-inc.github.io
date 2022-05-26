@@ -16,6 +16,12 @@ a {
   color: black;
 }
 
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+  scroll-behavior: smooth;
+}
+
 .material-symbols-outlined {
   font-family: 'Material Symbols Outlined';
   font-weight: bold;
@@ -31,7 +37,6 @@ a {
 }
 
 * {
-  user-select: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
@@ -47,6 +52,10 @@ html::-webkit-scrollbar-thumb {
 
 html::-webkit-scrollbar-thumb:hover {
   background-color: #777;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
 }
 
 .line {
@@ -66,6 +75,17 @@ html::-webkit-scrollbar-thumb:hover {
 
 .line-3 {
   top: 365vh;
+}
+
+.screens-container {
+  position: absolute;
+  z-index: -100;
+  opacity: 0;
+  height: 10vh;
+}
+
+.screens-container img {
+  width: 50px;
 }
 
 body {
@@ -114,6 +134,10 @@ header {
   width: 100%;
   margin: 0 auto;
   vertical-align: middle;
+}
+
+header a {
+  text-decoration: none;
 }
 
 .app-name {
@@ -191,11 +215,16 @@ header {
   width: 100%;
 }
 
+.home-section_phone .phone {
+  width: auto;
+  height: 90%;
+}
+
 .home-section_text h2 {
   margin-top: -10%;
 }
 
-.home-section_text p {
+.home-section_text a {
   width: max-content;
   display: block;
   padding: 0 10px;
@@ -209,6 +238,7 @@ header {
   vertical-align: top;
   cursor: pointer;
   transition: box-shadow .4s ease-in-out;
+  margin-bottom: 2.5vh;
 }
 
 .major-block_second-cont {
@@ -266,6 +296,10 @@ header {
 
 .big_stack-elements:nth-child(1) div {
   height: 50%;
+}
+
+.phone {
+  width: 70%;
 }
 
 .about-us-section_cube {
@@ -360,14 +394,15 @@ header {
   padding: 2vw;
 }
 
-.section-download div {
+.section-download a {
   width: 100%;
   text-align: center;
 }
 
-.section-download div img {
+.section-download a img {
   transition: box-shadow .4s ease-in-out;
   border-radius: 15px;
+  cursor: pointer;
 }
 
 footer {
@@ -446,6 +481,10 @@ footer .main-part {
   .major-block_second-cont_tech-stack {
     width: 100%;
   }
+  .home-section_phone .phone {
+    width: 80%;
+    height: auto;
+  }
   .home-section_text h2 {
     margin-top: 0;
   }
@@ -453,7 +492,8 @@ footer .main-part {
     font-size: 32px;
   }
   .phone {
-    width: 100%;
+    width: 80%;
+    height: auto;
   }
   .member {
     height: auto;

@@ -7,6 +7,7 @@
     <meta http-equiv='X-UA-Compatible' content='ie=edge'>
     <title>Studik</title>
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- <link rel='stylesheet' href='reset.css'> -->
     <link rel='stylesheet' href='main.min.css'>
 </head>
@@ -15,39 +16,47 @@
     <img src="images/Line.svg" class="line line-1">
     <img src="images/Line2.svg" class="line line-2">
     <img src="images/Line.svg" class="line line-3">
+    <div class="screens-container">
+        <img src="images/screens/phone-1_night.png">
+        <img src="images/screens/phone-1_day.png">
+        <img src="images/screens/phone-2_night.png">
+        <img src="images/screens/phone-2_day.png">
+        <img src="images/screens/phone-3_night.png">
+        <img src="images/screens/phone-3_day.png">
+    </div>
     <div class="major_cont">
         <header>
-            <div class="app-name">
+            <div class="app-name wow animate__animated animate__bounceInUp">
                 <h1>Studik</h1>
             </div>
             <div class="options">
-                <span>Home</span>
-                <span>About App</span>
-                <span>Our Team</span>
-                <span>Contact Us</span>
+                <a href="#home"><span>Home</span></a>
+                <a href="#about-app"><span>About App</span></a>
+                <a href="#our-team"> <span>Our Team</span></a>
+                <a href="#contact-us"><span>Contact Us</span></a>
             </div>
         </header>
-        <section class="major-block">
+        <section id="home" class="major-block">
             <div class="major-block_first-cont home-section_text">
                 <h2>First and only Android application of the University</h2>
                 <h4>LNU, Faculty of Electronics and Computer science</h4>
-                <p>Download the app</p>
+                <a href="#download">Download the app</a>
             </div>
             <div class="major-block_second-cont home-section_phone">
                 <!-- <div class="phone"></div> -->
-                <img class="phone" src="images/phone.png" alt="phone">
+                <img class="phone" src="images/screens/major_screen.png" alt="phone">
 
             </div>
         </section>
-        <section class="major-block">
-            <div class="major-block_first-cont major-block_first-cont_about-us">
+        <section id="about-up" class="major-block">
+            <div class="major-block_first-cont major-block_first-cont_about-us wow animate__animated animate__fadeInLeft">
                 <div class="about-us-section_cube">
                     <h2>PRODUCT IDEA</h2>
                     <img src="images/cube2.svg" alt="">
                 </div>
 
             </div>
-            <div class="major-block_second-cont major-block_second-cont_about-us">
+            <div class="major-block_second-cont major-block_second-cont_about-us wow animate__animated animate__fadeInRight">
                 <div>
                     <h3>The idea and purpose:</h3>
                     <p>An Android application filled with functionality that will be useful for students of the Faculty of Electronics and Computer Technology and can be integrated into their information system.</p>
@@ -62,23 +71,23 @@
                 </div>
             </div>
         </section>
-        <section class="major-block major-block_architecture">
-            <div class="major-block_first-cont major-block_first-cont_arch-stack">
+        <section id="about-app" class="major-block major-block_architecture ">
+            <div class="major-block_first-cont major-block_first-cont_arch-stack wow animate__animated animate__fadeInRight">
                 <h3>ARCHITECTURE OF <br> “STUDIK”</h3>
                 <img src="images/mock-up.png" alt="">
             </div>
-            <div class="major-block_second-cont major-block_second-cont_arch-stack">
-                <img class="phone" src="images/phone.png" alt="phone">
+            <div class="major-block_second-cont major-block_second-cont_arch-stack wow animate__animated animate__fadeInLeft">
+                <img class="phone" id="slide_show" src="images/screens/phone-1_night.png" alt="phone">
             </div>
         </section>
         <section class="major-block">
-            <div class="major-block_first-cont major-block_first-cont_tech-stack">
+            <div class="major-block_first-cont major-block_first-cont_tech-stack wow animate__animated animate__fadeInLeft">
 
                 <h2>TECHNOLOGICAL STACK</h2>
                 <h4>Technologies and platforms that were used during developing of this project</h4>
 
             </div>
-            <div class="major-block_second-cont major-block_second-cont_tech-stack">
+            <div class="major-block_second-cont major-block_second-cont_tech-stack wow animate__animated animate__fadeInRight">
                 <div class="tech-stack_container">
                     <div class="big_stack-elements">
                         <div class="stack-element">
@@ -95,10 +104,9 @@
                     </div>
                 </div>
             </div>
-
         </section>
-        <section>
-            <div class="team">
+        <section id="our-team">
+            <div class="team wow animate__animated animate__fadeInUp">
                 <div class="section-team-description">
                     <h2>OUR TEAM</h2>
                     <h4>Students of Faculty of Electronics and Computer<br>science</h4>
@@ -109,7 +117,7 @@
                     </div>
                     <div class="member-info">
                         <div class="member-name">Bilyk Nazar</div>
-                        <div class="member-role">Team lead & PM</div>
+                        <div class="member-role">Team Lead & PM</div>
                         <div class="member-description">
                             <ul>
                                 <li>Java, HTML, CSS, JavaScript;</li>
@@ -184,14 +192,14 @@
                 </div>
             </div>
         </section>
-        <section class="section-download">
+        <section id="download" class="section-download wow animate__animated animate__fadeInUp">
             <h2>DOWNLOAD<br>THE APP</h2>
-            <div>
+            <a href="app/icon.png" download="Studik">
                 <img src="images/google-play.png" alt="Download">
-            </div>
+            </a>
         </section>
     </div>
-    <footer>
+    <footer id="contact-us">
         <div class="major_cont">
             <div class="main-part">
                 <div class="app-name">
@@ -201,17 +209,18 @@
             </div>
             <div class="second-part footer_part">
                 <h4>Download</h4>
-                <a href="https://google.com" target="_blank"><i class="material-symbols-outlined">file_download</i>get it
+                <a href="app/icon.png" download="Studik"><i class="material-symbols-outlined">file_download</i>get it
 				</a>
             </div>
             <div class="third-part footer_part">
                 <h4>Contacts</h4>
-                <a href="https://google.com" target="_blank"><i class="material-symbols-outlined">email</i>lion.inc.studik@gmail.com</a>
+                <a href="mailto:lion.inc.studik@gmail.com" target="_self" class="email"><i class="material-symbols-outlined ">email</i>lion.inc.studik@gmail.com</a>
             </div>
         </div>
     </footer>
 
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src='wow.min.js'></script>
     <script src='main.js'></script>
 </body>
 

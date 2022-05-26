@@ -34,6 +34,10 @@
 
 a 
 	color: black
+html, body
+	overflow-x: hidden
+	max-width: 100%
+	scroll-behavior: smooth
 
 .material-symbols-outlined 
 	font-family: 'Material Symbols Outlined'
@@ -50,7 +54,7 @@ a
 	-webkit-font-smoothing: antialiased
 
 *
-	user-select: none
+	// user-select: none
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 
 html::-webkit-scrollbar 
@@ -71,8 +75,8 @@ html::-webkit-scrollbar-thumb:hover
 // .material-symbols-outlined 
 // 	font-variation-settings:'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48
 
-	.material-icons  
-		font-family: 'Material Icons'
+.material-icons  
+	font-family: 'Material Icons'
 .line
 	position: absolute
 	z-index: -5
@@ -85,10 +89,17 @@ html::-webkit-scrollbar-thumb:hover
 	&-3
 		top: 365vh
 	
-
+.screens-container
+	position: absolute
+	z-index: -100
+	opacity: 0
+	height: 10vh
+	img
+		width: 50px
 
 body
 	margin: 0
+
 
 
 html 
@@ -96,7 +107,6 @@ html
 	color: #8FC8EB //0295db
 	scrollbar-width: normal
 	scrollbar-color: #777 #555
-	// overflow-x: hidden
 
 
 
@@ -129,6 +139,8 @@ header
 	width: 100%
 	margin: 0 auto
 	vertical-align: middle
+	a
+		text-decoration: none
 .app-name
 	height: 100%
 	width: 40%
@@ -165,6 +177,7 @@ header
 
 
 
+
 .major-block
 	display: flex
 	justify-content: space-between
@@ -195,11 +208,15 @@ header
 		img
 			width: 100%
 	
-	
+.home-section_phone
+		.phone
+			width: auto
+			height: 90%	
 .home-section_text
 	h2
 		margin-top: -10%
-	p
+	a
+		user-select:none
 		width: max-content
 		display: block
 		padding: 0 10px 
@@ -213,6 +230,7 @@ header
 		vertical-align: top
 		cursor: pointer
 		transition: box-shadow .4s ease-in-out
+		margin-bottom: 2.5vh
 			
 
 .major-block_second-cont
@@ -222,7 +240,6 @@ header
 	justify-content: center
 	align-items: center
 	font-family: "Maven Pro", serif
-
 	&_about-us
 		width: 60vw
 		flex-direction: column
@@ -262,7 +279,8 @@ header
 		div
 			height: 50%
 
-
+.phone
+	width: 70%
 
 .about-us-section_cube
 	position: relative
@@ -329,12 +347,13 @@ header
 		line-height: 1
 		margin: 0
 		padding: 2vw
-	div
+	a
 		width: 100%
 		text-align: center
 		img
 			transition: box-shadow .4s ease-in-out
 			border-radius: 15px
+			cursor: pointer
 
 footer
 	min-height: 20vh
@@ -387,13 +406,19 @@ footer
 					width: 100%
 			&_tech-stack
 				width: 100%
+	.home-section_phone
+		.phone
+			width: 80%
+			height: auto
+	
 	.home-section_text
 		h2
 			margin-top: 0
 	h2
 		font-size: 32px
 	.phone
-		width: 100%
+		width: 80%
+		height: auto
 	.member
 		height: auto
 		margin-top: 3.5vw		
