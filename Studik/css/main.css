@@ -102,7 +102,7 @@ html {
 h2 {
   font-size: 64px;
   font-weight: bold;
-  font-family: "Titillium Web";
+  font-family: "Maven Pro", sans-serif;
 }
 
 h3 {
@@ -206,9 +206,18 @@ header a {
   justify-content: flex-start;
 }
 
+.major-block_first-cont_tech-stack h2 {
+  font-family: "Roboto", serif;
+}
+
+.major-block_first-cont_tech-stack h4 {
+  font-weight: 400;
+}
+
 .major-block_first-cont_arch-stack {
   padding-top: 2%;
   justify-content: flex-start;
+  font-family: 'Roboto', sans-serif;
 }
 
 .major-block_first-cont_arch-stack img {
@@ -243,6 +252,7 @@ header a {
 }
 
 .home-section_text a {
+  text-decoration: none;
   width: max-content;
   display: block;
   padding: 0 10px;
@@ -279,6 +289,7 @@ header a {
 
 .major-block_second-cont_tech-stack {
   width: 60vw;
+  height: 88%;
 }
 
 .major-block_second-cont_arch-stack {
@@ -344,6 +355,7 @@ header a {
 .team {
   display: grid;
   grid-template-columns: 50% 50%;
+  font-family: "Maven Pro", sans-serif;
 }
 
 .section-team-description {
@@ -364,7 +376,7 @@ header a {
   height: 15vw;
   margin-top: 3.5vw;
   display: flex;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Maven Pro", sans-serif;
 }
 
 .member div {
@@ -384,6 +396,7 @@ header a {
   margin-top: 1vw;
   font-size: 36px;
   font-weight: 600;
+  font-family: "Roboto", sans-serif;
 }
 
 .member-role {
@@ -449,7 +462,7 @@ footer .main-part {
 }
 
 @media screen and (min-width: 900px) {
-  .home-section_text p:hover {
+  .home-section_text a:hover {
     box-shadow: 0px 7px 9px 0px rgba(26, 230, 218, 0.15), 0px 13px 21px 0px rgba(26, 230, 218, 0.27), 0px 13px 21px 0px rgba(0, 0, 0, 0.15), 0px 4px 16px 0px rgba(26, 230, 218, 0.33), 0px 4px 16px 0px rgba(0, 0, 0, 0.09), 0px 3px 9px 0px rgba(26, 230, 218, 0.09), 0px 3px 9px 0px rgba(0, 0, 0, 0.09), 0px 3px 3px 0px rgba(26, 230, 218, 0.09), 0px 3px 3px 0px rgba(0, 0, 0, 0.17);
   }
   .section-download img:hover {
