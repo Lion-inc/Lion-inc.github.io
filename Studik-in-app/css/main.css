@@ -424,6 +424,7 @@ header a {
 }
 
 footer {
+  margin-top: 15vh;
   min-height: 20vh;
   background-color: #93C8E9;
   color: black;
@@ -446,6 +447,10 @@ footer .main-part {
 
 .footer_part {
   width: 27.5%;
+}
+
+.major-block_tech-stack {
+  height: 75vh;
 }
 
 @media screen and (min-width: 900px) {
