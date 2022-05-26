@@ -164,8 +164,8 @@ header a {
 
 .options span {
   font-size: 16px;
-  font-family: "Titillium Web";
   color: #454545;
+  font-family: "Maven Pro", sans-serif;
   cursor: pointer;
   text-decoration: none;
   background-image: linear-gradient(black, grey);
@@ -251,13 +251,18 @@ header a {
   margin-top: -10%;
 }
 
+.home-section_text h4 {
+  margin-top: -5%;
+  font-weight: 400;
+}
+
 .home-section_text a {
   text-decoration: none;
   width: max-content;
   display: block;
   padding: 0 10px;
   font-size: 18px;
-  font-family: "Titillium Web";
+  font-family: "Maven Pro", sans-serif;
   color: white;
   font-weight: bold;
   line-height: 2.5;
@@ -267,6 +272,7 @@ header a {
   cursor: pointer;
   transition: box-shadow .4s ease-in-out;
   margin-bottom: 2.5vh;
+  margin-top: 5vh;
 }
 
 .major-block_second-cont {
